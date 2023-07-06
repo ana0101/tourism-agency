@@ -1,0 +1,768 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+header {
+    height: 60px;
+    background-color:rgb(2, 31, 71);
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    border-bottom-style: ridge;
+    border-bottom-width: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#logo {
+    height: 70%;
+    width: 4%;
+    margin-left: 2%;
+    margin-right: 1%;
+    border-style: dashed;
+    border-color: rgb(128, 225, 255);
+    border-radius: 100%;
+    transition-property: border-color, width;
+    transition-duration: 3s, 5s;
+    transition-timing-function: linear;
+}
+
+#logo:hover {
+    border-color: azure;
+    width: 6%;
+}
+
+#nume {
+    align-self: center;
+    width: 20%;
+    margin-left: 0%;
+    color: whitesmoke;
+    transition-property: color, font-size;
+    animation-name: animatieNume;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animatieNume {
+    0% {
+        color: whitesmoke;
+        font-size: large;
+    }
+    50% {
+        color: rgb(145, 239, 244);
+        font-size: x-large;
+    }
+    100% {
+        color: whitesmoke;
+        font-size: large;
+    }
+}
+
+nav {
+    display: flex;
+    width: 60%;
+    margin-left: 0%;
+}
+
+.meniu {
+    display: flex;
+    padding: 0;
+    box-sizing: border-box;
+    width: 55%;
+    position: absolute;
+    align-self: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+}
+
+nav ul li {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+nav ul li:hover {
+    font-size: 100px;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: medium;
+    /* border-style: solid; */
+}
+
+.meniu>li>a:hover {
+    font-size: large;
+}
+
+.tours-dropdown>li>a:hover {
+    font-size: large;
+}
+
+.tours-dropdown {
+    display: none;
+    width: 100%;
+    position: absolute;
+    background-color: rgb(2, 31, 71);
+}
+
+.tours:hover .tours-dropdown {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 10px;
+    position: absolute;
+    z-index: 99;
+}
+
+#login {
+    align-self: center;
+    white-space: nowrap;
+    width: 5%;
+    margin-left: 2%;
+    margin-right: 0%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#logout {
+    align-self: center;
+    white-space: nowrap;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header form {
+    display: flex;
+    align-self: center;
+    white-space: nowrap;
+    width: 5%;
+    margin-left: 2%;
+    margin-right: 3%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header button, header form {
+    background-color: rgb(2, 31, 71);
+    font-size: medium;
+    color: whitesmoke;
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+header button:hover, header form:hover {
+    background-color: whitesmoke;
+    color: rgb(2, 31, 71);
+}
+
+@media only screen and (max-width: 1200px) {
+    #login, #logout {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #nume {
+        display: none;
+    }
+
+    #login, #logout {
+        width: auto;
+        margin: -2%;
+        padding: 0;
+    }
+
+    #logo {
+        margin-left: -3%;
+        height: fit-content;
+    }
+
+    .meniu {
+        width: 70%;
+        margin-left: -8%;
+        margin-right: 7%;
+    }
+}
+/* HEADER */
+
+
+/* HOME */
+#bine>img {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    opacity: 1;
+    filter: brightness(60%);
+    border-bottom-left-radius: 3%;
+    border-bottom-right-radius: 3%;
+}
+
+.text_bine {
+    position: absolute;
+    z-index: 9999;
+    top: 40%;
+    left: 20%;
+    text-align: left;
+    color: whitesmoke;
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+#section_tours {
+    border-top-style: outset;
+    border-bottom-style: outset;
+    border-top-color: rgb(206, 206, 239);
+    border-bottom-color: rgb(206, 206, 239);
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+    background-color: rgb(243, 243, 252);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#section_tours>h2 {
+    font-size: xx-large;
+    text-align: center;
+    margin-top: 1%;
+    padding: 2%;
+}
+
+#tours_container {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 4%;
+    margin-right: 4%;
+    padding: 1%;
+}
+
+#tours_container .city_tour, .summer_tour, .winter_tour {
+    position: relative;
+}
+
+#tours_container figure {
+    display: block;
+    text-align: center;
+    margin-bottom: 1%;
+    font-size: large;
+}
+
+#tours_container img {
+    width: 400px;
+    height: 600px;
+    border-radius: 10%;
+}
+
+#tours_container p {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 180%;
+    font-size: medium;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: whitesmoke;
+    opacity: 0;
+    text-align: center;
+}
+
+#tours_container p:hover {
+    opacity: 1;
+    background-color: rgb(0, 0, 0, 0.6);
+    border-radius: 10%;
+    height: 95.6%;
+    cursor: pointer;
+}
+
+
+#about_us {
+    background-color: rgb(243, 243, 252);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1%;
+    border-top-style: outset;
+    border-bottom-style: outset;
+    border-top-color: rgb(206, 206, 239);
+    border-bottom-color: rgb(206, 206, 239);
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+}
+
+#about_us>h2 {
+    font-size: xx-large;
+    text-align: center;
+    padding: 1%;
+}
+
+#about_us_container {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    padding: 2%;
+    font-size: medium;
+}
+
+#about_us img {
+    height: 35rem;
+    width: 52%;
+    border-radius: 5%;
+    display: none;
+}
+
+#about_us p {
+    width: 44%;
+    padding: 2%;
+    line-height: 170%;
+}
+
+
+#reviews {
+    background-color: rgb(243, 243, 252);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1%;
+    border-top-style: outset;
+    border-bottom-style: outset;
+    border-top-color: rgb(206, 206, 239);
+    border-bottom-color: rgb(206, 206, 239);
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+}
+
+#reviews>h2 {
+    font-size: xx-large;
+    text-align: center;
+    padding: 1%;
+}
+
+#reviews_container {
+    display: flex;
+    flex-flow: row;
+    padding: 2%;
+}
+
+#reviews_container>article {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column;
+    padding: 3%;
+    border-right-style: ridge;
+    border-left-style: ridge;
+    font-size: medium;
+}
+
+#reviews_container figure {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 3%;
+}
+
+#reviews_container figcaption {
+    float: right;
+    font-size: large;
+}
+
+#reviews_container>article img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 3%;
+}
+
+@media only screen and (max-width: 800px) {
+    #about_us_container {
+        flex-flow: column;
+    }
+    #about_us_container>img, #about_us_container>p{
+        width: 100%;
+    }
+
+    #reviews_container {
+        flex-flow: column;
+    }
+}
+/* HOME */
+
+
+/* TOURS */
+#tours {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#h1_tours {
+    padding: 2%;
+    margin-left: 1%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#h1_tours::after {
+    content: "";
+    display: inline-block;
+    width: 80px;
+    height: 25px;
+    background-image: url("https://media.istockphoto.com/id/932706278/vector/norway-flag-in-the-form-of-wave-ribbon.jpg?s=612x612&w=0&k=20&c=jPGXzaxY8EOigtbaO69_tyoH8Y9-4zJ1G2FmxFMkv2o=");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tour {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    font-size: medium;
+    padding: 2%;
+    border-style: outset;
+    border-color: rgb(206, 206, 239);
+    border-radius: 2%;
+    background-color: rgb(243, 243, 252);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.tour>h2 {
+    width: 100%;
+    margin-bottom: 1%;
+}
+
+.tour>.text {
+    display: flex;
+    flex-flow: column;
+}
+
+.tour>.imagini {
+    position: relative;
+    width: 90%;
+    height: 30rem;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.tour img {
+    width: 100%;
+    height: 30rem;
+    border-radius: 10%;
+    visibility: hidden;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-duration: 12s;
+    animation-name: anim;
+}
+
+.tour img {
+    position: absolute;
+}
+
+@keyframes anim {
+    0% {visibility: visible;}
+    25% {visibility: hidden;}
+}
+
+.tour img:nth-of-type(4n+1) {
+    animation-delay: 0s;
+}
+
+.tour img:nth-of-type(4n+2) {
+    animation-delay: 3s;
+}
+
+.tour img:nth-of-type(4n+3) {
+    animation-delay: 6s;
+}
+
+.tour img:nth-of-type(4n+4) {
+    animation-delay: 9s;
+}
+
+.tour>.text p {
+    width: 90%;
+    line-height: 170%;
+    padding: 2%;
+}
+
+.tour>.text button {
+    margin-top: 2%;
+    width: 10rem;
+    font-size: x-large;
+    border-radius: 10%;
+    color: whitesmoke;
+    background-color: rgb(2, 31, 71);
+    border-color: whitesmoke;
+    border-width: 5px;
+    cursor: pointer;
+}
+
+.clasa {
+    height: 3rem;
+    border-style: double;
+}
+
+@media only screen and (max-width: 1200px) {
+    #tours {
+        display: flex;
+        flex-flow: column;
+    }
+}
+/* TOURS */
+
+
+/* LOGIN */
+#content {
+    display: flex;
+    flex-flow: row;
+    width: 93%;
+    padding: 3%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#sect_login, #sect_signup, #new_here, #not_new {
+    display: flex;
+    flex-flow: column;
+    width: 60%;
+    height: 55vh;
+    padding: 2%;
+    background-color: rgb(243, 243, 252);
+    border-style: outset;
+    border-color: rgb(206, 206, 239);
+    border-radius: 2%;
+    margin: 1%;
+}
+
+.h1_login{
+    margin-bottom: 3%;
+}
+
+#content form {
+    display: flex;
+    flex-flow: column;
+}
+
+#content input[type=text], #content select, #content input[type=email] {
+    width: 100%;
+    padding: 2%;
+    margin-bottom: 2%;
+    border: 1px solid #ccc;
+    border-radius: 5%;
+    box-sizing: border-box;
+    font-size: medium;
+}
+
+.container_checkbox {
+    margin-bottom: 2%;
+}
+
+#content button[type=submit] {
+    width: 30%;
+    padding: 2%;
+    border-radius: 5%;
+    cursor: pointer;
+    margin-top: 2%;
+    font-size: medium;
+    background-color: rgb(2, 31, 71);
+    color: rgb(243, 243, 252);
+}
+
+#sect_signup {
+    display: none;
+}
+
+#new_here, #not_new {
+    width: 30%;
+}
+
+#new_here>p, #not_new>p {
+    font-size: large;
+    margin-bottom: 4%;
+}
+
+#new_here>button, #not_new>button {
+    width: 30%;
+    padding: 2%;
+    border-radius: 5%;
+    margin-top: 2%;
+    font-size: medium;
+    background-color: rgb(2, 31, 71);
+    color: rgb(243, 243, 252);
+    cursor: pointer;
+}
+
+#not_new {
+    display: none;
+}
+
+#content button:hover {
+    background-color: whitesmoke;
+    color: rgb(2, 31, 71);
+}
+   
+@media only screen and (max-width: 900px) {
+    #content {
+        flex-flow: column;
+    }
+    #sect_login, #sect_signup, #new_here, #not_new {
+        width: 96%;
+        height: 50vh;
+    }
+    #new_here, #not_new {
+        height: 25vh;
+    }
+}
+/* LOGIN */
+
+
+/* BOOK */
+#book_section{
+    height: 80vh;
+    color: black;
+    display: flex;
+    flex-flow: row;
+}
+
+h2 {
+    font-size: xx-large;
+    padding: 2%;
+    margin-left: 2%;
+}
+
+#confirm {
+    width: 30%;
+    height: 80vh;
+    background-color: rgb(243, 243, 252);
+    border-style: outset;
+    border-color: rgb(206, 206, 239);
+    border-radius: 2%;
+}
+
+#form_book {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    border-style: outset;
+    border-color: rgb(206, 206, 239);
+    border-radius: 2%;
+    background-color: rgb(243, 243, 252);
+}
+
+#form_book form {
+    margin-left: 5%;
+    font-size: x-large;
+    background-color: transparent;
+    display: flex;
+    flex-flow: row;
+}
+
+select option {
+    background-color: rgb(243, 243, 252);
+    width: 2%;
+}
+
+#book_section option, select, input, .book button {
+    font-size: large;
+    background-color: transparent;
+    color: black;
+    border-style: ridge;
+    border-color: black;
+    border-radius: 5%;
+    width: 20%;
+}
+
+.book h3 {
+    padding: 2%;
+    margin-left: 3%;
+    font-size: x-large;
+}
+
+#book_button {
+    margin-left: 4.7%;
+    margin-top: -2%;
+    cursor: pointer;
+    height: 10%;
+    width: 20%;
+    font-size: x-large;
+    border-radius: 10%;
+    color: whitesmoke;
+    background-color: rgb(2, 31, 71);
+    border-color: whitesmoke;
+    border-width: 5px;
+    cursor: pointer;
+}
+
+#book_button:hover {
+    border-style: double;
+}
+/* BOOK */
+
+
+/* FOOTER */
+#footer {
+    display: flex;
+    flex-flow: row;
+    border-top-style: ridge;
+    border-top-width: 5px;
+    justify-content: space-around;
+    background-color: rgb(2, 31, 71);
+    color: whitesmoke;
+    font-size: small;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#footer>section {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    padding: 2%;
+}
+
+#footer h3 {
+    margin-bottom: 4%;
+    font-size: large;
+}
+
+#footer figure {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 3%;
+}
+
+#footer figcaption {
+    float: right;
+}
+
+#footer img {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-right: 3%;
+}

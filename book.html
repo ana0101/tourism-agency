@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <script src="book.js"></script>
+        <link rel = "stylesheet" type = "text/css" href="style.css">
+        <title>Agentie turism Norvegia Book</title>
+    </head>
+
+    <header id="header">
+        <img id="logo" src="C:\Users\anama\Downloads\northern-globetrotter-high-resolution-logo-color-on-transparent-background.png" alt="nu exista">
+        <h3 id="nume">Northern Globetrotter</h3>
+        
+        <nav>
+            <ul class="meniu">
+                <li><a href="C:\Users\anama\Desktop\site\home.html">Home</a></li>
+                <li class="tours">
+                    <a href="C:/Users/anama/Desktop/site/home.html#section_tours">Our tours</a>
+                    <ul class="tours-dropdown">
+                        <li><a href="C:\Users\anama\Desktop\site\city_breaks.html">City-breaks</a></li>
+                        <li><a href="C:\Users\anama\Desktop\site\summer.html">Summer tours</a></li>
+                        <li><a href="C:\Users\anama\Desktop\site\winter.html">Winter tours</a></li>
+                        <li><a href="C:\Users\anama\Desktop\site\tours.html">All tours</a></li>
+                    </ul>
+                </li>
+                <li><a href="C:/Users/anama/Desktop/site/book.html">Book now</a></li>
+                <li><a href="C:/Users/anama/Desktop/site/home.html#about_us">About us</a></li>
+                <li><a href="C:/Users/anama/Desktop/site/home.html#reviews">Reviews</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+        </nav>
+
+        <button id="login" onclick = "window.location.href='C:/Users/anama/Desktop/site/login.html';">Login</button>
+        <form action="/logout" method="post">
+            <button id="logout" type="submit">Logout</button>
+        </form>
+    </header>
+
+
+    <section class="book">
+        <h2>Ready to book your vacation?</h2>
+
+        <section id="book_section">
+            <section id="form_book">
+                <form action="/action_page.php">
+                    <label for="tour_type">Your tour:</label>
+                    <select name="tour_type" id="tour_type">
+                        <option value="fjords">Fjords Tour</option>
+                        <option value="lights">Northern Lights Tour</option>
+                        <option value="viking">The Viking Tour</option>
+                        <option value="oslo">Oslo Tour</option>
+                        <option value="ski">Ski Tour</option>
+                        <option value="trondheim">Trondheim Tour</option>
+                        <option value="bergen">Bergen Tour</option>
+                        <option value="arctic">Arctic Adventure Tour</option>
+                        <option value="lofoten">Lofoten Islands Tour</option>
+                        <option value="tromso">Tromsø Tour</option>
+                        <option value="safari">Wildlife Safari Tour</option>
+                        <option value="sun">Midnight Sun Tour</option>
+                        <option value="coastal">Coastal Tour</option>
+                        <option value="cycling">Cycling Tour</option>
+                    </select>
+                </form>
+        
+                <form action="/action_page.php">
+                    <label for="departure">Your departure city:</label>
+                    <select name="departure" id="departure">
+                        <option value="London">London</option>
+                        <option value="Birmingham">Birmingham</option>
+                        <option value="Glasgow">Glasgow</option>
+                        <option value="Manchester">Manchester</option>
+                    </select>
+                </form>
+        
+                <form action="/action_page.php">
+                    <label for="check_in">Check-in:</label>
+                    <input type="date" id="check_in" name="check_in">
+        
+                    <label for="check_out">Check-out:</label>
+                    <input type="date" id="check_out" name="check_out">
+                </form>
+        
+                <form action="/action_page.php">
+                    <label for="people">Number of people:</label>
+                    <input type="number" id="people" name="people">
+                </form>
+        
+                <h3 id="cost">Cost: 0 euros</h3>
+        
+                <button id="book_button">Book</button>
+            </section>
+
+            <section id="confirm">
+                <h3>Choose your options on the left</h3>
+            </section>
+        </section>
+
+    </section>
+
+
+    <footer id="footer">
+        <section id="contact">
+            <h3>Contact</h3>
+            <h4>Address: address</h4>
+            <h4>Phone number: 03478932</h4>
+            <h4>Email: agency@gmail.com</h4>
+        </section>
+
+        <section id="information">
+            <h3>Information</h3>
+            <h4>Privacy Policy</h4>
+            <h4>Terms of Use</h4>
+            <h4>Travel Resources</h4>
+        </section>
+
+        <section id="socials">
+            <h3>Socials</h3>
+            <figure>
+                <img src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-facebook-social-media-icon-png-image_6315968.png" alt="nu exista">
+                <figcaption>Facebook</figcaption>
+            </figure>
+            <figure>
+                <img src="https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c521.png" alt="nu exista">
+                <figcaption>Instagram</figcaption>
+            </figure>
+            <figure>
+                <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png" alt="nu exista">
+                <figcaption>Twitter</figcaption>
+            </figure>
+        </section>
+    </footer>
+</html>
