@@ -1,0 +1,1 @@
+This repo contains my project for my Web technologies class. It is a website for a Norwegian tourism agency
