@@ -1,1 +1,3 @@
-This repo contains my project for my Web technologies class. It is a website for a Norwegian tourism agency
+# Tourism Agency
+
+This repo contains a website for a tourism agency using HTML, CSS and Javascript
